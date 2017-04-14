@@ -66,8 +66,8 @@ var logoAnimation = (function() {
     .add({
       targets: '.Circle',
       strokeDashoffset: [
-        { value: [anime.setDashoffset, anime.setDashoffset], duration: 3000 },
-        { value: 0, duration: 1200, easing: 'easeInOutQuart' }
+        { value: [anime.setDashoffset, anime.setDashoffset], duration: 100 },
+        { value: 0, duration: 1500, easing: 'easeInOutQuart' }
       ],
       strokeWidth: {
         value: [8, 2],
@@ -78,7 +78,7 @@ var logoAnimation = (function() {
       stroke: {
         value: ['#FFEB3B', function(el) { return anime.getValue(el, 'stroke') } ],
         duration: 800,
-        delay: 3400,
+        delay: 500,
         easing: 'easeInQuad'
       },
       offset: 0
